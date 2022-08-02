@@ -1,0 +1,25 @@
+---
+id: 371ad0b0-bb69-4c98-8f12-fd8f00e810e0
+version: 1.0.0
+license: CC0-1.0
+authors:
+  - github_account: kmhernan
+    name: Kyle Hernandez
+    affiliation: University of Chicago
+    orcid: 0000-0001-8267-644X
+workflow:
+  name: download-sra
+  readme: "https://raw.githubusercontent.com/pitagora-network/pitagora-cwl/cd79f2db4b166d205456ab718e2581d6ab6e9f23/README.md"
+  language:
+    type: CWL
+    version: v1.0
+  files:
+    - url: "https://raw.githubusercontent.com/pitagora-network/pitagora-cwl/cd79f2db4b166d205456ab718e2581d6ab6e9f23/tools/download-sra/download-sra.cwl"
+      target: download-sra.cwl
+      type: primary
+  testing:
+    - id: test_1
+      files:
+        - url: "https://raw.githubusercontent.com/pitagora-network/pitagora-cwl/cd79f2db4b166d205456ab718e2581d6ab6e9f23/tools/download-sra/download-sra.yml"
+          target: wf_params.json
+          type: wf_params
